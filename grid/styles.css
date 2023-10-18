@@ -1,0 +1,18 @@
+.grid-container{
+    display:grid;
+    /* grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 60px 60px 60px; */
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    height: 20rem;
+    width:50%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.grid-item{
+    /* height: 40px;
+    width:100px; */
+    background-color: antiquewhite;
+}
