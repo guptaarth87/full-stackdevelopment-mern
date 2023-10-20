@@ -1,0 +1,21 @@
+1. Ensure uniformness
+   - Note down the components you are going to use in your website
+     ex - buttons , subheading , headings , description , Links , cards
+
+2. For font and colour selection from a specific website we can use
+   tool like - colorpick eyedropeer , what font
+
+3. For fonts we can use google fonts ;- https://fonts.google.com/
+
+4. We will pre design our components and decide the colour theme
+
+5. We will start with writting down the sections for our webpage 
+    - Contact from
+    - About us sections
+    - services section 
+
+    -Number of pages
+      -  Service details
+
+
+6. And we will use this description to start designing our website's wireframe.
