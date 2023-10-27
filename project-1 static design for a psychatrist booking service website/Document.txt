@@ -23,3 +23,18 @@
 
 -- create gradients - https://csshero.org/mesher/
 -- colors - #3A7694
+
+About us
+- Our misssion 
+- Our vision
+- How you can connect to our community
+
+Contact us
+- Form 
+   -> Name
+   -> Email id
+   -> Phone number
+   -> Drop Down menu for service to book
+   -> Age
+
+--https://neumorphism.io/#e0e0e0

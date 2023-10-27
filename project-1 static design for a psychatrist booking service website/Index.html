@@ -20,7 +20,8 @@
 <body>
     <!-- navigation bar -->
 
-    <nav class="navbar position_nav navbar-expand-lg navbar-light " style="background-color: #e3f2fd; ">
+    <nav class="navbar position_nav navbar-expand-lg navbar-light " style="  background-image:linear-gradient(to right, rgba(58, 118, 148, 1) 0%, rgba(8, 8, 61, 1) 100%);
+    color:white !important; ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="Assets/logo.png" class="Logo"/>
@@ -31,24 +32,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active white nav-font" aria-current="page" href="Index.html">Home</a>
               </li>
               <!-- About us -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About us</a>
+                <a class="nav-link active white nav-font" aria-current="page" href="About.html">About us</a>
               </li>
               <!-- Contact us -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+                <a class="nav-link active white nav-font" aria-current="page" href="Contact.html">Contact us</a>
               </li>
               
-             
+  
              
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
@@ -73,21 +71,15 @@
       </div>
 
       <!-- Our experts -->
-      <h2 class="centreAlign mt-4">Our Experts</h2>
+     
+      <h2 class="centreAlign mt-5">Our Experts</h2>
       <div class="row">
         <div id="carouselExampleControls" class="carousel slide col-12" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                <div class="row p-4">
-                <div class="card m-2 col-5" >
-                    <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><strong>Dr. Ramesh</strong></h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn button-background  responsive_button">Go somewhere</a>
-                    </div>
-                  </div>
-                  <div class="card m-2 col-5" >
+                <div class="col-2"></div>
+                <div class="card m-2 col-4" >
                     <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Dr. Ramesh</strong></h5>
@@ -95,15 +87,22 @@
                       <a href="#" class="btn button-background responsive_button">Go somewhere</a>
                     </div>
                   </div>
-                
-                 
                   
-               
-               </div>
+                  <div class="card m-2 col-4" >
+                    <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Dr. Ramesh</strong></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn button-background responsive_button">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="col-1"></div>
+              </div>
               </div>
               <div class="carousel-item">
                 <div class="row p-4">
-                  <div class="card m-2 col-5" >
+                  <div class="col-2"></div>
+                  <div class="card m-2 col-4" >
                       <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title"><strong>Dr. Ramesh</strong></h5>
@@ -111,7 +110,7 @@
                         <a href="#" class="btn button-background  responsive_button">Go somewhere</a>
                       </div>
                     </div>
-                    <div class="card m-2 col-5" >
+                    <div class="card m-2 col-4" >
                       <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title"><strong>Dr. Ramesh</strong></h5>
@@ -119,6 +118,7 @@
                         <a href="#" class="btn button-background responsive_button">Go somewhere</a>
                       </div>
                     </div>  
+                    <div class="col-1"></div>
                  </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -131,6 +131,114 @@
             </button>
           </div>
       </div>
+        <!-- our services -->
+        <div class="mt-5  p-5" style="background-color: #e3f2fd;">
+          <h2 class="centreAlign mt-5" style="color: black;">Our Services</h2>
+   
+          <div class="row parent_service_div" >
+   
+           <!-- card1 -->
+   
+           <div class="card m-2  col-lg-2 col-md-3 col-sm-4"  >
+             <img src="Assets/anxiety.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-1"> <strong>Anxiety/Stress</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-4"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card2 -->
+   
+           <div class="card m-2  col-lg-2  col-md-3 col-sm-4">
+             <img src="Assets/depression.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-1"> <strong>depression</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-5"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card3 -->
+           
+           <div class="card  m-2   col-lg-2  col-md-3 col-sm-4" >
+             <img src="Assets/obesity.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-0"> <strong>Eating Disorder</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-4"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card4 -->
+   
+           <div class="card m-2  col-lg-2  col-md-3 col-sm-4">
+             <img src="Assets/bipolar.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-2"> <strong>Bipolar Disorder</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-4"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card5 -->
+           <div class="card m-2  col-lg-2  col-md-3 col-sm-4" >
+             <img src="Assets/relationship.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-4 relationship"> <strong>Relationship Issue</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-4"> Consult Now</a>
+             </div>
+           </div>
+           <div class="col-1"></div>
+   
+           <!-- card6 -->
+   
+           <div class="card m-2   col-lg-2  col-md-3 col-sm-4"  >
+             <img src="Assets/teenage issue.jpg"  class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-1"> <strong>Teenage issue</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-4"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card7 -->
+   
+           <div class="card m-2  col-lg-2  col-md-3 col-sm-4">
+             <img src="Assets/dementia.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-1"> <strong>Dementia</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-5"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card8 -->
+           
+           <div class="card m-2  col-lg-2  col-md-3 col-sm-4" >
+             <img src="Assets/neuro.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-1 neuro" > <strong>Neuro development disorder</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-3"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card9 -->
+   
+           <div class="card m-2  col-lg-2  col-md-3 col-sm-4">
+             <img src="Assets/ptsd.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-2 ptsd" > <strong>Post Traumatic stress disorder (PTSD)</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-4"> Consult Now</a>
+             </div>
+           </div>
+   
+           <!-- card10 -->
+           <div class="card m-2  col-lg-2  col-md-3 col-sm-4" >
+             <img src="Assets/schizophrenia.jpg" class="card-img-top" alt="anxiety">
+             <div class="card-body">
+               <h5 class="card-title mt-1"> <strong>Schizophrenia</strong></h5>
+               <a href="#" class="btn button-background responsive_button mt-4"> Consult Now</a>
+             </div>
+           </div>
+           <div class="col-1"></div>
+              
+          </div>
+         </div>
        <!-- Faq section -->
        <h2 class="centreAlign mt-4">General Faqs</h2>
 

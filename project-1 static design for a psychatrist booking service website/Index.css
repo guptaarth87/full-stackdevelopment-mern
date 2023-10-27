@@ -26,7 +26,9 @@
 
 .carousel-control-prev-icon ,.carousel-control-next-icon {
     background-color: black;
-    color: black
+    color: black;
+    border-radius: 50%;
+
 }
 
 .position_nav{
@@ -40,7 +42,16 @@
     background-image:linear-gradient(to right, rgba(58, 118, 148, 1) 0%, rgba(8, 8, 61, 1) 100%);
     color:white;
 }
+.white{
+    /* text-decoration: none; */
+    color:white !important;
+}
 
+.nav-font{
+    margin-left:1rem;
+    font-size: 1.3rem;
+    font-weight:1.5rem;
+}
 @media(max-width:767px){
     .card-title{
         font-size: 12px;
@@ -51,4 +62,29 @@
     .responsive_button{
         font-size:12px;
     }
+}
+
+.description{
+    font-size: 1.2rem;
+    padding:2rem;
+}
+
+.highlight{
+    color: #3A7694;
+}
+
+.footer{
+    position:sticky;
+    bottom:0px;
+    
+}
+
+.card-img-top{
+    margin-top:10px;
+}
+
+.parent_service_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
