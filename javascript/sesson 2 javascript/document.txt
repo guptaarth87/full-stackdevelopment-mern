@@ -1,0 +1,24 @@
+-> Formatting 
+
+backticks ` `
+` ${<variable name>}`
+
+-> alert
+
+-> prompt -> prompt is used to take inputs
+
+-> operators
+-> using typeof
+
+-> conditional statement 
+-> ternary operators
+
+-> for loop
+-> cases of infinite looping
+
+-> while loop
+
+-> conditional statements with looping
+
+-> assignment -> 1. prime numbers print using while and for loop
+                 2. Learn about do while 

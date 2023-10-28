@@ -1,0 +1,26 @@
+-> primitive data types
+
+1. String -> "arth" , "sun" , "12", "10downingstreet", "hello_world"
+2. Float -> 10.1 , 1.00 , 100.21
+
+3. Boolean -> true , false
+
+4. Integer -> 1 ,2 ,3 
+
+-> other data types
+
+1. Arrays -> [1,2,3,4,5] -> types -> 1. nested array , 2d array etc
+
+2. JSON, objects -> {                  -> Nested objects
+             "name" : "tushar",         
+             "address" : "xyz colony",
+             "age" : 22,
+             "subjects_marks":{
+                               "dsa":90,
+                               "m2":80
+                               }
+           }
+
+
+
+
