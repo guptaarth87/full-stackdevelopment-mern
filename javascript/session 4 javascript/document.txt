@@ -1,0 +1,7 @@
+1. revision of function
+2. filter method
+
+// assignment read about reduce method over array
+
+-> Objects
+-> Object filter
