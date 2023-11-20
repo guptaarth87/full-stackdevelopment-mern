@@ -1,5 +1,8 @@
 import './App.css';
+
 import LandingPage from './Pages/LandingPage';
+import Propfile from './Pages/Propfile';
+import Reacthook from './Pages/Reacthook';
 
 
 function App() {
@@ -7,7 +10,11 @@ function App() {
  <>
      <div>
        <h1>Hello from app</h1>
-       <LandingPage/>
+       <hr></hr>
+       {/* <LandingPage/> */}
+       {/* <Propfile/> */}
+
+       <Reacthook/>
      </div>
  </>
 
