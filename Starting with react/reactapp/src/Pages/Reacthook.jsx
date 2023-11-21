@@ -22,16 +22,16 @@ export default function Reacthook() {
   }
 
   const handlePrice = ()=>{
-    var newPrice = datax.price_+10;
+    var newPrice = price+10;
     console.log(newPrice);
-    setDatax({ ...datax, [datax.price_]: newPrice });
-    // setDatax(newPrice);
+   //  setDatax({ ...datax, [datax.price_]: newPrice });
+    setPrice(price+10);
   }
 
   return (
    <>
       <h1>my age is - {age}</h1>
-      <h1>price of maggie is  {datax.price_}</h1>
+      <h1>price of maggie is  {price}</h1>
       <button onClick={handlePrice}>Increase price</button>
       <button onClick={handleIncrease}>Increase age</button>
       <br></br><br></br>
