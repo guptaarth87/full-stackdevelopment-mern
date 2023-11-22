@@ -1,0 +1,11 @@
+1-> What is react , uses of react , installation set up
+2->Functional , class components
+3->Hooks -> useState , useEffect
+4->Fetch Functional
+5->Jsx
+6->Ternary operator
+7->Props (seding data from one to another)
+8-> Class Component -> componentDidMount , componentDidUpdate
+9-> Set up routing
+10-> Routing types using <a> , <Link> , programatically using useNavigate() hook
+11-> Connecting custom files of css and bootstrap using cdn

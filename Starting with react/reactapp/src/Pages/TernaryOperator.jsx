@@ -53,15 +53,15 @@ export default function TernaryOperator() {
 }
 
 //ternary operator
-const age=19;
+// const age=19;
 
-if (age>18 || age==18){
-    console.log("he can vote")
-}else{
-    console.log("he cannot vote")
-}
+// if (age>18 || age==18){
+//     console.log("he can vote")
+// }else{
+//     console.log("he cannot vote")
+// }
 
-(age>18 || age==18)?
-console.log("he can vote")
-:
-console.log("he cannot vote")
+// (age>18 || age==18)?
+// console.log("he can vote")
+// :
+// console.log("he cannot vote")
