@@ -1,7 +1,8 @@
 import React from 'react';
 import './Navbar.css';
 import {Link} from 'react-router-dom';
-import Logo from '../../Assets/logo.png'
+import Logo from '../../Assets/logo.png';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
   return (
@@ -28,7 +29,13 @@ export default function Navbar() {
               <li class="nav-item">
                 <Link class="nav-link active white nav-font" aria-current="page" to="contactus">Contact us</Link>
               </li>
-              
+              <li class="nav-item">
+                <HashLink class="nav-link active white nav-font" aria-current="page" to="#faqs">Faq</HashLink>
+              </li>
+
+              <li class="nav-item">
+                <HashLink class="nav-link active white nav-font" aria-current="page" to="#ourservices">Our Services</HashLink>
+              </li>
   
              
             </ul>
