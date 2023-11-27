@@ -9,3 +9,4 @@
 9-> Set up routing
 10-> Routing types using <a> , <Link> , programatically using useNavigate() hook
 11-> Connecting custom files of css and bootstrap using cdn
+12->Map
