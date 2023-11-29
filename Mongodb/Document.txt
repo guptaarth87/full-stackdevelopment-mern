@@ -1,0 +1,94 @@
+1. Intialize out database
+
+use <dbname>
+
+Inserting a document /data
+
+db.students.insertOne({"name":"Arth","age":23,"marks":90})
+//to insert multiple documents together
+db.students.insertMany([
+    {"name":"Arun","age":21,"marks":85},
+    {"name":"dishika","age":22},
+    {"name":"shikha","age":21}
+    ]
+)
+
+//to see all the entered data
+db.students.find()
+
+//to see specific data document
+db.students.findOne({"age":21})
+
+//multiple condition based filtering
+db.students.find({"age":21,"name":"shikha"})
+
+//condition return data with age less than equal 22
+db.students.find(
+    {"age":{$lte : 22}}
+)
+
+db.students.find(
+    {"age":{$gt : 22}}
+)
+
+// using "AND" and "OR" operator
+
+//AND -> every single givin condition have to be satisfied
+//OR -> any one or more condition have to be satisfied
+
+db.students.find({
+    $and :[
+    {"age":23},
+    {"marks":90}
+    ]
+})
+
+db.students.find({
+    $or :[
+    {"age":21},
+    {"marks":90}
+    ]
+})
+
+
+//sorting
+//for scending we give value as 1
+//for descending we give value as -1
+db.students.find().sort({"age":-1})
+
+//updating a document
+db.students.insertMany([
+    {"name":"Arun","age":21,"marks":85},
+    {"name":"dishika","age":25, "address":{
+        "houseNo":20,
+        "street":"vijay nagar"
+    }},
+    {"name":"shikha","age":24, "marks":90,"subjects":["cs","it","me"]}
+    ]
+)
+
+//Updatting data
+
+db.students.updateOne(
+    {"name":"dishika"},
+    { $set :{"age":19}}
+)
+
+db.students.find()
+
+//
+db.students.deleteOne({"name":"Arth"})
+
+Assignment
+
+updateMany
+deleteMany
+
+create a database named students
+Create a collection named student_detail
+
+insert 5 documents
+    -attributes : "name", "id" , "subjects" , "address", "marks"
+
+
+//try different filters and sorting , updation, deletion
