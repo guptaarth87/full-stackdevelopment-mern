@@ -92,3 +92,175 @@ insert 5 documents
 
 
 //try different filters and sorting , updation, deletion
+
+
+
+//Aggregate functions
+ use MongodbTutorial
+
+db.students.insertMany(
+    [
+  {
+    "name": "Alice",
+    "address": {
+      "street": "123 Main St",
+      "city": "Cityville",
+      "state": "Stateville",
+      "zip": "12345"
+    },
+    "age": 20,
+    "total_marks": 85,
+    "subjects": ["Math", "English", "Science"],
+    "gender": "Female"
+  },
+  {
+    "name": "Bob",
+    "address": {
+      "street": "456 Elm St",
+      "city": "Townsville",
+      "state": "Stateland",
+      "zip": "67890"
+    },
+    "age": 22,
+    "total_marks": 75,
+    "subjects": ["History", "Physics", "Chemistry"],
+    "gender": "Male"
+  },
+  {
+    "name": "Charlie",
+    "address": {
+      "street": "789 Oak St",
+      "city": "Villagetown",
+      "state": "Stateville",
+      "zip": "54321"
+    },
+    "age": 21,
+    "total_marks": 90,
+    "subjects": ["Computer Science", "Biology", "Math"],
+    "gender": "Male"
+  },
+  {
+    "name": "David",
+    "address": {
+      "street": "101 Pine St",
+      "city": "Hamletville",
+      "state": "Stateland",
+      "zip": "98765"
+    },
+    "age": 19,
+    "total_marks": 88,
+    "subjects": ["English", "Chemistry", "History"],
+    "gender": "Male"
+  },
+  {
+    "name": "Eva",
+    "address": {
+      "street": "202 Maple St",
+      "city": "Citytown",
+      "state": "Stateville",
+      "zip": "13579"
+    },
+    "age": 23,
+    "total_marks": 78,
+    "subjects": ["Physics", "Biology", "Computer Science"],
+    "gender": "Female"
+  },
+  {
+    "name": "Frank",
+    "address": {
+      "street": "303 Birch St",
+      "city": "Villagetown",
+      "state": "Stateland",
+      "zip": "24680"
+    },
+    "age": 20,
+    "total_marks": 92,
+    "subjects": ["Math", "History", "English"],
+    "gender": "Male"
+  },
+  {
+    "name": "Grace",
+    "address": {
+      "street": "404 Cedar St",
+      "city": "Hamletville",
+      "state": "Stateville",
+      "zip": "97531"
+    },
+    "age": 21,
+    "total_marks": 85,
+    "subjects": ["Chemistry", "Physics", "Biology"],
+    "gender": "Female"
+  },
+  {
+    "name": "Henry",
+    "address": {
+      "street": "505 Redwood St",
+      "city": "Townsville",
+      "state": "Stateland",
+      "zip": "86420"
+    },
+    "age": 22,
+    "total_marks": 79,
+    "subjects": ["History", "English", "Computer Science"],
+    "gender": "Male"
+  },
+  {
+    "name": "Ivy",
+    "address": {
+      "street": "606 Poplar St",
+      "city": "Citytown",
+      "state": "Stateville",
+      "zip": "75309"
+    },
+    "age": 19,
+    "total_marks": 91,
+    "subjects": ["Biology", "Math", "Physics"],
+    "gender": "Female"
+  },
+  {
+    "name": "Jack",
+    "address": {
+      "street": "707 Walnut St",
+      "city": "Villagetown",
+      "state": "Stateland",
+      "zip": "64203"
+    },
+    "age": 23,
+    "total_marks": 87,
+    "subjects": ["Computer Science", "Chemistry", "History"],
+    "gender": "Male"
+  }
+])
+
+// db.students.findOne({"name":"Jack"})
+
+db.students.aggregate([
+  {$match : {age : {$gt: 19}}},
+  {$limit : 2}
+ 
+
+  ])
+
+
+
+//$project recieves or expects 2 values or a key value where key is a field name and value can be 
+//either 1 or 0 , where 1 means project and include and 0 means exclude
+
+db.students.aggregate([
+  {$match : {total_marks : {$gt: 80} }},
+  {
+    $project :{
+      "name" : 1,
+      "age":1,
+      "total_marks": 1
+    }
+  },
+  {$limit : 5},
+  {$sort: {age : -1} }
+  
+ 
+
+  ])
+
+
+
