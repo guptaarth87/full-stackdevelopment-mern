@@ -1,0 +1,4 @@
+1. Intializing
+   - npm init
+   -it will ask you to provide a suitable name
+   
