@@ -11,25 +11,16 @@ http.createServer(function(req , res){
   
     console.log("server running on port 8080")
     // var url_data = url.parse(req.url,true).query;
-    const address = 'https://localhost:8080/default.html?year=2022&month=December';
-    const parseUrl = url.parse(address, true);
-    var url_data = parseUrl.host;
+    // const address = 'https://localhost:8080/default.html?year=2022&month=December';
+    // const parseUrl = url.parse(address, true);
+    // var url_data = parseUrl.host;
+    var url_data = url.parse(req.url,true).query;
     // console.log(url_data);
-    console.log(`url nav-  ${req.url}`);
-    
+    // console.log(`url nav-  ${req.url}`);
+    console.log(url_data);
     if (req.url == '/index'){
-        // res.write(Index.html);
-        fs.readFile(path.join(__dirname, 'Index.html'), 'utf8', (err, data) => {
-            if (err) {
-              // Handle the error
-              res.writeHead(500, { 'Content-Type': 'text/plain' });
-              res.end('Internal Server Error');
-            } else {
-              // Send the content of index.html
-              res.writeHead(200);
-              res.end(data);
-            }
-          });
+        res.write("<h1>This is a index page</h1>");
+       
     }else if (req.url == '/services'){
         res.write("<h1>This is a service page</h1>");
     }
