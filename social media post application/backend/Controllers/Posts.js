@@ -30,15 +30,16 @@ exports.addPost = async (req, res)=>{
 }
 
 exports.getPosts= async (req, res)=>{
-
-    const search_text = req.body.search_text;
-
+    
+    const search_text = req.params.searchtext;
+    // console.log(search_text);
+    // console.log("this function called");
     try{
         let query= {}
 
         //check if search_text is available
 
-        if(search_text){
+        if(search_text!=='None'){
             query={
                 $or:[
                     {post_tags:search_text},

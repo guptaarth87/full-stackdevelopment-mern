@@ -2,10 +2,21 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose= require('mongoose');
 require("dotenv").config();
+var cors = require('cors')
 
 const routes = require('./Routes/index')
 
 const app = express();
+
+app.use(cors())
+
+//handle cors
+// app.use((req,res,next)=>{
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+//     res.setHeader('Access-Control-Allow-Methods', 'GET', 'POST', 'PUT', 'DELETE');
+//     res.setHeader('Acess-Control-Allow-Headers', 'Content-Type, Authorization');
+//     next();
+// })
 
 const PORT = 1111
 
