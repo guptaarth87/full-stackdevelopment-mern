@@ -60,6 +60,19 @@ exports.getPosts= async (req, res)=>{
     }
 }
 
+exports.getPostByUser=async(req, res)=>{
+    const username_ = req.params.username;
+ try{
+    const filteredData =  await Posts.find({username:username_}).sort({post_date_time: -1})
+
+    res.status(200).json({
+    message:"posts fetched successfully",
+    posts: filteredData})
+   }catch(err){
+    res.status(500).json( {error:err })
+   }
+
+}
 
 exports.updatePost= async (req, res)=>{
 
@@ -105,24 +118,24 @@ exports.updatePost= async (req, res)=>{
 
 
 exports.deletePost = async (req, res)=>{
-    const postId = req.params.post;
+    const postId = req.params.id;
     try{
-
+      
     
-    if(!postId){
-        res.status(400).json({error:' post id not provided'})
-       }
+    // if(!postId){
+    //     res.status(400).json({error:' post id not provided'})
+    //    }
 
-       //Find post
-       const existingPost = await Posts.findById(postID);
+    //    //Find post
+    //    const existingPost = await Posts.findById(postID);
 
-       if (!existingPost){
-        res.status(400).json({error:' post id incorrect'})
-       }
+    //    if (!existingPost){
+    //     res.status(400).json({error:' post id incorrect'})
+    //    }
         
        const DeletedObj =await Posts.deleteOne({ "_id" : postId });
        
-       res.status(200).json({message:"user deleted successfully"})
+       res.status(200).json({message:"user deleted successfully",post:DeletedObj})
 
 
     }catch(err){
